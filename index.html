@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang>
+<html>
+
+<head>
+    <title> Jigoku Tsushin </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+
+        const sleep = (milliseconds) => {
+            return new Promise(resolve => setTimeout(resolve, milliseconds))
+        }
+
+        function mudaGif() {
+            console.log("aqui");
+            sleep(400).then(() => {
+                console.log("algo");
+                document.getElementById("gif").style.display = "none";
+                document.getElementById("form").style.display = "block";
+            })
+        }
+    </script>
+</head>
+<body onload="mudaGif()">
+    <div id="gif">
+        <img src="fogo.gif" alt="Imagem de fogo">
+    </div>
+    <div id="form">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="text-align-center">
+            <div color="#FFFFFF">"Nós vingaremos seu rancor."</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div">
+            <br><br><br>
+            <form>
+                <div class="text-align-center"> Sua dor será aliviada.
+                    <br> <input type="text" required autofocus>
+                    <br>
+                    <br>
+                    <input type="submit" value="ENVIAR">
+                </div>
+            </form>
+    </div>
+    </div>
+</body>
+
+</html>

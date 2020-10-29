@@ -1,0 +1,19 @@
+body{
+    background-color: black ;
+    font-size:"3";  
+    color: white;
+    font-family:"Rockwell"; 
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+#gif{
+    margin-top: 150px;
+    text-align: center;
+}
+
+#form{
+    display: none;
+}
